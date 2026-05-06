@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "additional.h"
 
 std::string doPrint(std::string a) { //**functions can only return a single value
 	return a;
@@ -38,6 +39,9 @@ int add(int x, int y) { //x and y are local variables
 	return z;
 } //variables are destroyed here
 
+double average(double x, double y, double z);
+
+
 int main() {
 
 	std::cout << doPrintAgain("Selam ben Dogukan") << std::endl; //temporary string same as every return value
@@ -54,5 +58,16 @@ int main() {
 
 	std::cout << "2+3: " << add(2, 3) << std::endl;
 
+	std::cout << "2*3: " << DogukanMath::multiply(2,3) << std::endl;
+
+	std::cout << "5/4: " << DogukanMath::divide(5.0, 4.0) << std::endl;
+
+	std::cout << "average of 3,5 and 9: " << average(3.0, 5.0, 9.0) << std::endl;
+
 	return 0;
+}
+
+double average(double x, double y, double z) {
+	double a = (x + y + z) / 3;
+	return a;
 }
