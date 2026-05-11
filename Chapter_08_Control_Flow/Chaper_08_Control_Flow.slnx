@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Chaper_08_Control_Flow/Chaper_08_Control_Flow.vcxproj" Id="3ec8c5a3-f199-4a2b-883c-2a8a241cd7d3" />
+</Solution>
